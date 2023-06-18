@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+.header-component {
+  background-color: #3A1078;
+  height: 80px;
+  width: 100%;
+ position: fixed;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navLink-header{
+  color: white; 
+  margin-left: 50px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navBarBrand-header {
   display: flex;
-  flex-direction: column;
+  padding: 10px;  
+  > h3 {
+    color: white;
+  }
+  
+}
+.icons-header{
+  font-size: 30px;
+  padding-right: 1px;
+  margin-left: 6px;
+  color: rgb(4, 178, 247);
+}
+.input-header{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+  padding-left: 10px;
+  margin-left: 16px;
+  border-radius: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.serach-icon-header{
+  width: 60px;
+  position: absolute;
+  z-index: 1;
+  top: 31px;
+  right:40px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.home-component{
+  background-image: url('https://sistemasgeniales.com/wp-content/uploads/2020/10/REACT.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.text-home{
+  color: #4E31AA;
+  padding-top: 139px ;
+  margin-left: 360px;
+  font-size: 60px;
+  font-weight: bold;
+  :nth-child(2){
+    color: #00DFA2;
+    font-size: 40px;
+    padding: 10px;
+    margin-left: 150px;
+    margin-bottom: 10px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.btn-component{
+  background-color: rgb(71, 71, 90);
+  width: 200px;
+  margin-left: 910px;
+  margin-top: 400px;
+  border-radius: 30px;
+  height: 50px;
 }

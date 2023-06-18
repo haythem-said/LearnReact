@@ -11,6 +11,9 @@
 # production
 /build
 
+# Ignorer les fichiers .json
+package.json
+
 # misc
 .DS_Store
 .env.local
