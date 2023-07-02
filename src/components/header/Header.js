@@ -20,7 +20,7 @@ function Header(args) {
     <div className="header-component">
       <Navbar expand="md">
         <NavbarBrand className="navBarBrand-header">
-          <FaReact className="icons-header" /> <h3>Learning ReactJS</h3>
+          <FaReact className="icons-header"  href="/"/> <Link to="/"> <span style={{color:"white"}}>Learning ReactJS</span></Link>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>

@@ -1,68 +1,147 @@
 .header-component {
-  background-color: #3A1078;
+  background-color: #3a1078;
   height: 80px;
   width: 100%;
- position: fixed;
+  z-index: 999;
+  position: fixed;
 }
-.navLink-header{
-  color: white; 
+.navLink-header {
+  color: white;
   margin-left: 50px;
 }
 .navBarBrand-header {
   display: flex;
-  padding: 10px;  
+  padding: 10px;
   > h3 {
     color: white;
   }
-  
 }
-.icons-header{
+.icons-header {
   font-size: 30px;
   padding-right: 1px;
   margin-left: 6px;
   color: rgb(4, 178, 247);
 }
-.input-header{
+.input-header {
   display: flex;
   align-items: center;
-  
+
   padding-left: 10px;
   margin-left: 16px;
   border-radius: 10px;
 }
-.serach-icon-header{
+.serach-icon-header {
   width: 60px;
   position: absolute;
   z-index: 1;
   top: 31px;
-  right:40px;
+  right: 40px;
 }
-.home-component{
-  background-image: url('https://sistemasgeniales.com/wp-content/uploads/2020/10/REACT.jpg');
+.home-component {
+  background-image: url("https://sistemasgeniales.com/wp-content/uploads/2020/10/REACT.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
- 
 }
-.text-home{
-  color: #4E31AA;
-  padding-top: 139px ;
+.text-home {
+  color: #4e31aa;
+  padding-top: 139px;
   margin-left: 360px;
   font-size: 60px;
   font-weight: bold;
-  :nth-child(2){
-    color: #00DFA2;
+  :nth-child(2) {
+    color: #00dfa2;
     font-size: 40px;
     padding: 10px;
     margin-left: 150px;
     margin-bottom: 10px;
   }
 }
-.btn-component{
+.btn-component {
   background-color: rgb(71, 71, 90);
   width: 200px;
   margin-left: 910px;
   margin-top: 400px;
   border-radius: 30px;
   height: 50px;
+}
+.SideNav-learn-page {
+  background-color: #3a1078;
+}
+.learn-page {
+  display: flex;
+}
+.side-bar {
+  background-color: #3a1078;
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  color: white;
+  padding: 100px;
+}
+.accordion {
+  margin-left: -50px;
+  padding: 10px;
+}
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+}
+.button-accordation {
+  background-color: #3a1078;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  height: 50px;
+  width: 200px;
+  cursor: pointer;
+}
+.accordion-content {
+  color: white;
+  border: none;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #3a1078;
+}
+.side-bar-getStart {
+  padding-top: 16px;
+
+  border-bottom: 3px solid #706ee4;
+  > h4 {
+    position: absolute;
+    top: -20px;
+    left: -50px;
+    color: #706ee4;
+    font-size: 20px;
+  }
+}
+.container-learn-page{
+  padding: 90px;
+  margin-left: 300px;
+  background-color: #ecf8f8;
+}
+.side-bar-learn {
+  padding-top: 16px;
+  border-bottom: 3px solid #706ee4;
+  > h4 {
+    position: relative;
+    top: 10px;
+    left: -50px;
+    color: #706ee4;
+    width: 200px;
+    font-size: 20px;
+  }
+}
+.card-leran-page{
+  background-color:#C4DFDF ;
+}
+.hayt{
+  padding: 100px;
+  width: 50%;
+  background-color:#ecf8f8;
+  margin-left: -1px;
 }
