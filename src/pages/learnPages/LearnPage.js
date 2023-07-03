@@ -1,8 +1,14 @@
 import React from "react";
 import Header from "../../components/header/Header";
 import SideBarComponent from "../../components/sideBar/SideBarComponent";
+import LeftSideBar from "../../components/sideBarLeft/LeftSideBar";
+import { useNavigate } from "react-router-dom";
 
 const LearnPage = () => {
+  const navigate = useNavigate();
+  const GoNextPage = () => {
+    navigate("general-concept");
+  };  
   return (
     <>
       <Header />
@@ -29,7 +35,7 @@ const LearnPage = () => {
             declarative approach, and a vast ecosystem to support various use
             cases.
           </p>
-          <div className=" card-leran-page card mb-3 p-2 ">
+          <div className=" card-learn-page card mb-3 p-2 ">
             <h3>You will learn</h3>
             <ul>
               <li>React Fundamentals</li>
@@ -121,8 +127,16 @@ const LearnPage = () => {
               performance monitoring.
             </p>
           </div>
+          <div className="pt-3">
+            <button class="btn btn-primary " onClick={GoNextPage}>
+              Next Page
+            </button>
+          </div>
         </container>
-        <h1 className=" hayt text-center mt-2">haythem</h1>
+
+        <div className=" side-bar-left mt-1">
+          <LeftSideBar />
+        </div>
       </div>
     </>
   );

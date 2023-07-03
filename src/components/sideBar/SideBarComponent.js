@@ -9,20 +9,20 @@ const SideBarComponent = () => {
   const location = useLocation();
 
   const handelClick = () => {
-    navigate(`${location.pathname}/what-is-reactJs`);
+    navigate(`general-concept`);
   };
   const handelClickTwo = () => {
-    navigate(`${location.pathname}/what-is-haythem`);
+    navigate(`some-projets`);
   };
   return (
     <div className="side-bar">
       <Col>
         <div className="side-bar-getStart">
-          <h4>Get Start</h4>
+          <h4>Learn React</h4>
           <Row>
             <Accordion
               title="Quick Start"
-              contentOne="what is reactJs"
+              contentOne="General concept "
               // {accordionData.map((data, index) => (
               //   <React.Fragment key={index}>
               //     {data.content}
@@ -30,25 +30,31 @@ const SideBarComponent = () => {
               //     <br />
               //   </React.Fragment>
               // )) }
+              contentTwo="Some projects"
+              handelClick={handelClick}
+              handelClickTwo={handelClickTwo}
+            />
+            <Accordion
+              title="Fundamentals"
+              contentOne="what is reactJs"
               contentTwo="what is haythem"
               handelClick={handelClick}
               handelClickTwo={handelClickTwo}
             />
           </Row>
           <Row>
-            <Link to="/installation">
-              <Accordion title="Installation" contentOne="haythem said" />
-            </Link>
-          </Row>
-        </div>
-        <div className="side-bar-learn">
-          <h4>Learn React</h4>
-          <Row>
             <Accordion title="Describing the UI" contentOne="haythem said" />
-          </Row>{" "}
+          </Row>
           <Row>
+            <Accordion
+              title="React Hooks"
+              contentOne="Hooks"
+              handelClick={handelClick}
+            />
+          </Row> 
+          {/* <Row>
             <Accordion title="Managent State" contentOne="haythem said" />
-          </Row>{" "}
+          </Row>{" "} */}
         </div>
       </Col>
     </div>

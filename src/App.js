@@ -3,6 +3,7 @@ import "./App.css";
 import Hearder from "./components/header/Header";
 import Home from "./pages/Home";
 import LearnPage from "./pages/learnPages/LearnPage";
+import GeneralConcept from "./pages/generalConcept/GeneralConcept";
 
 function App() {
   return (
@@ -11,7 +12,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/learn" element={<LearnPage />}></Route>
-
+          <Route
+            path="/learn/general-concept"
+            element={<GeneralConcept />}
+          ></Route>
         </Routes>
       </BrowserRouter>
     </div>

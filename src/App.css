@@ -34,7 +34,6 @@
   width: 60px;
   position: absolute;
   z-index: 1;
-  top: 31px;
   right: 40px;
 }
 .home-component {
@@ -123,8 +122,9 @@
   padding: 90px;
   margin-left: 300px;
   background-color: #ecf8f8;
+
 }
-.side-bar-learn {
+/* .side-bar-learn {
   padding-top: 16px;
   border-bottom: 3px solid #706ee4;
   > h4 {
@@ -135,13 +135,31 @@
     width: 200px;
     font-size: 20px;
   }
-}
-.card-leran-page{
+} */
+.card-learn-page{
   background-color:#C4DFDF ;
 }
-.hayt{
+.side-bar-left{
   padding: 100px;
   width: 50%;
   background-color:#ecf8f8;
   margin-left: -1px;
+}
+.support-palestine{
+  height: 70px;
+  padding: 10px;
+  margin-left: -15px;
+
+  color: white;
+  position: fixed;
+  width: 100%;
+  background-color: #706ee4;
+  border-radius: 3px;
+  >img{
+    margin-top: 10px;
+    margin-left: -10px;
+    padding-right: 10px;
+    height: 500px;
+    width: 510px;
+  }
 }
