@@ -118,11 +118,10 @@
     font-size: 20px;
   }
 }
-.container-learn-page{
+.container-learn-page {
   padding: 90px;
   margin-left: 300px;
   background-color: #ecf8f8;
-
 }
 /* .side-bar-learn {
   padding-top: 16px;
@@ -136,16 +135,16 @@
     font-size: 20px;
   }
 } */
-.card-learn-page{
-  background-color:#C4DFDF ;
+.card-learn-page {
+  background-color: #c4dfdf;
 }
-.side-bar-left{
+.side-bar-left {
   padding: 100px;
   width: 50%;
-  background-color:#ecf8f8;
+  background-color: #ecf8f8;
   margin-left: -1px;
 }
-.support-palestine{
+.support-palestine {
   height: 70px;
   padding: 10px;
   margin-left: -15px;
@@ -155,11 +154,19 @@
   width: 100%;
   background-color: #706ee4;
   border-radius: 3px;
-  >img{
+  > img {
     margin-top: 10px;
     margin-left: -10px;
     padding-right: 10px;
     height: 500px;
     width: 510px;
+  }
+}
+.general-concept {
+  background-color: #ecf8f8;
+display: flex;
+  > img {
+    background-size: contain;
+    padding-left: 900px;
   }
 }
